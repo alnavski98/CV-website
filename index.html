@@ -34,7 +34,7 @@
                         <th><i class="fi-telephone"></i> Phone</th>
                     </tr>
                     <tr>
-                        <th class="details">+47 99102877</th>
+                        <th class="details"><a href="tel:+4799102877">+47 99102877</a></th>
                     </tr>
                 </table>
 
@@ -136,9 +136,19 @@
                             Summer internship with part-time in May and full-time in June, July and August.
                         </p>
 
-                        <p class="description-bottom">
-                            The position involved improvement of new and existing PCB design. I was tasked with designing a PCB that could emulate valves using a Raspberry Pi from "scratch".
+                        <p class="description">
+                            The position involves improvement of new and existing PCB design. I was tasked with designing a PCB that could emulate valves using a Raspberry Pi from "scratch".
                             Which includes troubleshooting a former relevant PCB design, and test that the new one works with Proserv's existing test system.
+                        </p>
+
+                        <p class="description">
+                            In this position I am getting more familiar with popular EDA tools such as KiCad and will be familiarizing myself with more industry grade
+                            EDA software such as Cadstar and Altium at a later period. I also use LTspice as an important step to test small parts of the circuits
+                            I make to verify functionality and as a way of planning in advance before designing PCB's in order to improve my workflow
+                        </p>
+
+                        <p class="description-bottom">
+                            I am also in the process of getting more used to documenting tutorials, technical specifications and solutions using Microsoft Azure Devops
                         </p>
                     </div>
                     
@@ -152,7 +162,8 @@
                         </p>
 
                         <p class="description-bottom">
-                            Through this experience I developed stronger analytical skills and the ability to work with complex electronic circuits
+                            Through this experience I developed stronger analytical skills and the ability to work with complex electronic circuits and got more
+                            familiar with the circuit simulator program LTspice
                         </p>
                     </div>
 
@@ -344,4 +355,17 @@
             </div>
         </div>
     </body>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var leftSide = document.getElementById('leftSide');
+            var topOffset = leftSide.offsetTop;
+
+            if (window.pageYOffset >= topOffset) {
+                leftSide.classList.add('sticky');
+            } else {
+                leftSide.classList.remove('sticky');
+            }
+        });
+    </script>
 </html>
