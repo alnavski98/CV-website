@@ -65,7 +65,7 @@ a {
 
 .right-side {
     max-width: 650px;
-    background-color: white;  
+    background-color: rgb(255, 255, 255);  
 }
 
 #about, #experience, #education, #volunteering {
@@ -90,6 +90,20 @@ a {
 
 .description-bottom {
     margin-bottom: 65px;
+}
+
+.tab {
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.last-tab {
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 750px) {    
