@@ -10,7 +10,7 @@
     <body>
 
         <a href="CV_online.pdf" download>
-            <button>Download CV</button>
+            <button id="download_button">Download CV</button>
         </a>
 
         <div class="content">
@@ -158,7 +158,7 @@
 
                         <p class="description">
                             In this position I am getting more familiar with popular EDA tools such as KiCad and will be familiarizing myself with more industry grade
-                            EDA software such as Cadstar and Altium at a later period. I also use LTspice as an important step to test small parts of the circuits
+                            EDA software such as Cadstar or Altium at a later period. I also use LTspice as an important step to test small parts of the circuits
                             I make to verify functionality and as a way of planning in advance before designing PCB's in order to improve my workflow
                         </p>
 
@@ -414,4 +414,22 @@
             </div>
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+  // Function to generate and download the PDF
+  function downloadPDF() {
+    // Capture the webpage content
+    var content = document.documentElement.innerHTML;
+
+    // Generate the PDF
+    var doc = new jsPDF();
+    doc.text(content, 10, 10); // Customize the PDF layout as needed
+
+    // Trigger the download
+    doc.save('CV.pdf');
+  }
+
+  // Attach the downloadPDF function to the button click event
+  document.getElementById('download_button').addEventListener('click', downloadPDF);
+</script>
 </html>
